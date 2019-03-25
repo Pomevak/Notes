@@ -1,0 +1,80 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        .waterfall {
+            position: relative;
+            width: 100%;
+        }
+
+        .waterfall img {
+            position: absolute;
+            width: 100px;
+            margin: 10px;
+
+            transition: all .4s;
+        }
+    </style>
+    <title>Waterfall Layout - Using JavaScript</title>
+</head>
+
+<body>
+    <div class="waterfall">
+        <img src="http://via.placeholder.com/100x100" alt="100*100" style="left: 0px; top: 0px;">
+        <img src="http://via.placeholder.com/100x70" alt="100*70" style="left: 120px; top: 0px;">
+        <img src="http://via.placeholder.com/100x150" alt="100*150" style="left: 240px; top: 0px;">
+        <img src="http://via.placeholder.com/100x250" alt="100*250" style="left: 360px; top: 0px;">
+        <img src="http://via.placeholder.com/100x80" alt="100*80" style="left: 120px; top: 90px;">
+        <img src="http://via.placeholder.com/100x90" alt="100*90" style="left: 0px; top: 120px;">
+        <img src="http://via.placeholder.com/100x120" alt="100*120" style="left: 240px; top: 170px;">
+        <img src="http://via.placeholder.com/100x210" alt="100*210" style="left: 120px; top: 190px;">
+        <img src="http://via.placeholder.com/100x230" alt="100*230" style="left: 0px; top: 230px;">
+        <img src="http://via.placeholder.com/100x100" alt="100*100" style="left: 360px; top: 270px;">
+        <img src="http://via.placeholder.com/100x70" alt="100*70" style="left: 240px; top: 310px;">
+        <img src="http://via.placeholder.com/100x150" alt="100*150" style="left: 360px; top: 390px;">
+        <img src="http://via.placeholder.com/100x250" alt="100*250" style="left: 240px; top: 400px;">
+        <img src="http://via.placeholder.com/100x80" alt="100*80" style="left: 120px; top: 420px;">
+        <img src="http://via.placeholder.com/100x90" alt="100*90" style="left: 0px; top: 480px;">
+        <img src="http://via.placeholder.com/100x120" alt="100*120" style="left: 120px; top: 520px;">
+        <img src="http://via.placeholder.com/100x210" alt="100*210" style="left: 360px; top: 560px;">
+        <img src="http://via.placeholder.com/100x250" alt="100*250" style="left: 0px; top: 590px;">
+        <img src="http://via.placeholder.com/100x80" alt="100*80" style="left: 120px; top: 660px;">
+        <img src="http://via.placeholder.com/100x80" alt="100*80" style="left: 240px; top: 670px;">
+        <img src="http://via.placeholder.com/100x90" alt="100*90" style="left: 120px; top: 760px;">
+        <img src="http://via.placeholder.com/100x120" alt="100*120" style="left: 240px; top: 770px;">
+        <img src="http://via.placeholder.com/100x210" alt="100*210" style="left: 360px; top: 790px;">
+        <img src="http://via.placeholder.com/100x100" alt="100*100" style="left: 0px; top: 860px;">
+        <img src="http://via.placeholder.com/100x70" alt="100*70" style="left: 120px; top: 870px;">
+        <img src="http://via.placeholder.com/100x250" alt="100*250" style="left: 240px; top: 910px;">
+        <img src="http://via.placeholder.com/100x210" alt="100*210" style="left: 120px; top: 960px;">
+        <img src="http://via.placeholder.com/100x250" alt="100*250" style="left: 0px; top: 980px;">
+        <img src="http://via.placeholder.com/100x210" alt="100*210" style="left: 360px; top: 1020px;">
+        <img src="http://via.placeholder.com/100x230" alt="100*230" style="left: 240px; top: 1180px;">
+        <img src="http://via.placeholder.com/100x100" alt="100*100" style="left: 120px; top: 1190px;">
+        <img src="http://via.placeholder.com/100x70" alt="100*70" style="left: 0px; top: 1250px;">
+        <img src="http://via.placeholder.com/100x150" alt="100*150" style="left: 360px; top: 1250px;">
+        <img src="http://via.placeholder.com/100x150" alt="100*150" style="left: 120px; top: 1310px;">
+        <img src="http://via.placeholder.com/100x230" alt="100*230" style="left: 0px; top: 1340px;">
+        <img src="http://via.placeholder.com/100x70" alt="100*70" style="left: 360px; top: 1420px;">
+        <img src="http://via.placeholder.com/100x150" alt="100*150" style="left: 240px; top: 1430px;">
+        <img src="http://via.placeholder.com/100x250" alt="100*250" style="left: 120px; top: 1480px;">
+        <img src="http://via.placeholder.com/100x80" alt="100*80" style="left: 360px; top: 1510px;">
+        <img src="http://via.placeholder.com/100x90" alt="100*90" style="left: 0px; top: 1590px;">
+        <img src="http://via.placeholder.com/100x120" alt="100*120" style="left: 240px; top: 1600px;">
+        <img src="http://via.placeholder.com/100x210" alt="100*210" style="left: 360px; top: 1610px;">
+        <img src="http://via.placeholder.com/100x250" alt="100*250" style="left: 0px; top: 1700px;">
+        <img src="http://via.placeholder.com/100x80" alt="100*80" style="left: 240px; top: 1740px;">
+        <img src="http://via.placeholder.com/100x80" alt="100*80" style="left: 120px; top: 1750px;">
+        <img src="http://via.placeholder.com/100x90" alt="100*90" style="left: 240px; top: 1840px;">
+        <img src="http://via.placeholder.com/100x120" alt="100*120" style="left: 360px; top: 1840px;">
+        <img src="http://via.placeholder.com/100x210" alt="100*210" style="left: 120px; top: 1850px;">
+    </div>
+
+    <script src="./assets/js/index.js"> </script>
+
+</body>
+
+</html>
