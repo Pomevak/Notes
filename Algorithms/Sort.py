@@ -135,7 +135,25 @@ class Sort:
 
         return merge(left, right)
 
+    @staticmethod
+    def bucket_sort(arr, num_of_buckets):
+        span = (max(arr) - min(arr)) / (num_of_buckets - 1)
+        buckets = [[] for i in range(num_of_buckets)]
+        for n in arr:
+            buckets[int(n // span)].append(n)
+        
+        res = []
+        for buck in buckets:
+            Sort.shell_sort(buck)
+            res += buck
+        
+        return res
+
+        
+
 
 if __name__ == "__main__":
-    arr = [9, 1, 43, 45, 63, 3, 6, 2, 78, 21, 4]
-    print(Sort.heap_sort(arr))
+    arr = [9.2, 1, 43.8, 45, 63.6, 3, 6.5, 2, 78, 21, 4]
+    print(Sort.bucket_sort(arr, 10))
+    #print(Sort.heap_sort(arr))
+    print(arr)
